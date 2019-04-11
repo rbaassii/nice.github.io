@@ -2,56 +2,49 @@ body{
     background-color: #000;
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.6em;
-    margin: 0;
+    padding-top: 12em;
+    margin: 20px;
       }
 main h1{
-  font-size: 9.3em;
+  font-size: 6.4em;
   color: #fff;
   text-align: center;
   font-family: 'Open Sans Condensed', serif;
   width: center;
-  padding-top: 1.0em;
   margin: 0 auto;
+  justify-content: center;
+  display: block;
 /*animation*/
-  overflow: auto;
-  white-space: no-wrap;
-  border-center: .15em solid #000;
-  animation: typing 3.5s steps(30, end);
-  animation: blinking-cursor .5s step-end infinite;
+  overflow: hidden;
+  border-right:.02em solid orange;
+  white-space: nowrap;
+  letter-spacing:0.1em;
+
   animation:
-   typing 3.5s steps(30, end),
-   blinking-cursor .5s step-end;
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 }
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
-@keyframes blinking-cursor {
+@keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #000 }
+50% { border-color: #00c86f }
 }
-  p{
-    text-align: right;
-    font-family: 'Barlow', sans-serif;
-    font-size: 0.7em;
-    color: #2e2e2e;
-    padding-right: 2.0em;
-    text-align: center;
-    margin 0;
-  }
 aside {
   display: inline-block;
-  color: #4e4e4e;
-  padding-left: 2.0em;
+  color: #353535;
   font-size: 0.7em;
   font-family: 'Barlow', sans-serif;
   text-decoration: none;
-  padding-top: 14.0em;
+  padding-top: 14em;
+  padding-left:62em;
 }
 aside li{
 display: inline-block;
 }
 nav a{
-  color: inherit;
+  color:#00c86f;
   text-decoration: none;
 }

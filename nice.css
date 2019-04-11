@@ -16,7 +16,7 @@ main h1{
   display: block;
 /*animation*/
   overflow: hidden;
-  border-right:.02em solid orange;
+  border-right:.04em solid orange;
   white-space: nowrap;
   letter-spacing:0.1em;
 

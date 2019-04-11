@@ -11,6 +11,24 @@ main h1{
   font-family: 'Open Sans Condensed', serif;
   width: center;
   padding-top: 1.0em;
+  margin: 0 auto;
+/*animation*/
+  overflow: auto;
+  white-space: no-wrap;
+  border-center: .15em solid #000;
+  animation: typing 3.5s steps(30, end);
+  animation: blinking-cursor .5s step-end infinite;
+  animation:
+   typing 3.5s steps(30, end),
+   blinking-cursor .5s step-end;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: #000 }
 }
   p{
     text-align: right;
